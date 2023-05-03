@@ -9,20 +9,22 @@
     <div class="icones my-2">
       <div class="icones-topo">
         <v-icon
-          v-for="(item, idx) in icones"
+          v-for="(item, idx) in iconesTopo"
           :key="idx"
           class="d-block text-center mx-auto mb-4"
-          color="white"
+          color="grey"
           size="24"
           >{{ item.icone }}</v-icon
         >
       </div>
-      <div class="icones-baixo">
-        <v-icon class="d-block text-center mx-auto mb-4" color="white" size="24"
-          >mdi-account-circle-outline</v-icon
-        >
-        <v-icon class="d-block text-center mx-auto mb-4" color="white" size="24"
-          >mdi-cog-outline</v-icon
+      <div class="icones-bottom">
+        <v-icon
+          v-for="(item, idx) in iconesBottom"
+          :key="idx"
+          class="d-block text-center mx-auto mb-4"
+          color="grey"
+          size="24"
+          >{{ item.icone }}</v-icon
         >
       </div>
     </div>
@@ -32,13 +34,17 @@
 <script>
 export default {
   data: () => ({
-    icones: [
+    iconesTopo: [
       { icone: "mdi-file-multiple-outline" },
       { icone: "mdi-magnify" },
       { icone: "mdi-source-branch" },
       { icone: "mdi-play-outline" },
       { icone: "mdi-grid-large" },
       { icone: "mdi-dots-horizontal" },
+    ],
+     iconesBottom: [
+      { icone: "mdi-account-circle-outline" },
+      { icone: "mdi-cog-outline" },
     ],
   }),
 };
@@ -48,7 +54,7 @@ export default {
 :deep(.v-navigation-drawer__border) {
   background: #1b1f23 !important;
 }
-.icones-baixo {
+.icones-bottom {
   position: absolute;
   bottom: 0px;
   margin-left: 15px;
