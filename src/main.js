@@ -6,7 +6,6 @@ import vuetify from './plugins/vuetify'
 import 'prismjs';
 import 'prismjs/themes/prism-okaidia.css'
 import 'prismjs/components/prism-json'
-import 'prismjs/plugins/line-numbers/prism-line-numbers';
 
 Vue.config.productionTip = false
 
