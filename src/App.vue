@@ -8,7 +8,9 @@
       <side-bar />
     </v-navigation-drawer>
 
-    <main-vue />
+    <main-vue>
+      <router-view></router-view>
+    </main-vue>
   </v-app>
 </template>
 

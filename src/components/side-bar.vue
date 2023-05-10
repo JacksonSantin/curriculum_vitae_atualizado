@@ -20,12 +20,12 @@ export default {
   data: () => ({
     activeTab: null,
     tabs: [
-      {colorIcon: "orange", icon: "mdi-account-details-outline", title: "sobre-mim.js"},
-      {colorIcon: "red", icon: "mdi-star-outline", title: "skills.js"},
-      {colorIcon: "green", icon: "mdi-school-outline", title: "formacao.js"},
-      {colorIcon: "blue", icon: "mdi-briefcase-outline", title: "experiencia.js"},
-      {colorIcon: "purple", icon: "mdi-code-tags", title: "projetos.js"},
-      {colorIcon: "cyan", icon: "mdi-email-outline", title: "contato.js"},
+      {colorIcon: "orange", icon: "mdi-account-details-outline", title: "sobre-mim.md"},
+      {colorIcon: "red", icon: "mdi-star-outline", title: "skills.md"},
+      {colorIcon: "green", icon: "mdi-school-outline", title: "formacao.md"},
+      {colorIcon: "blue", icon: "mdi-briefcase-outline", title: "experiencia.md"},
+      {colorIcon: "purple", icon: "mdi-code-tags", title: "projetos.md"},
+      {colorIcon: "cyan", icon: "mdi-email-outline", title: "contato.md"},
     ]
   })
 };
