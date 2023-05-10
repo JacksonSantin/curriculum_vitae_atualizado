@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MarkdownIt from 'markdown-it';
+import MarkdownIt from "markdown-it";
 
 export default {
   data() {
@@ -21,8 +21,7 @@ export default {
 - Vue: 80%
 
 
-`
-
+`,
     };
   },
   computed: {

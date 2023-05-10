@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MarkdownIt from 'markdown-it';
+import MarkdownIt from "markdown-it";
 
 export default {
   data() {
@@ -50,8 +50,7 @@ Gosto de uma boa música, trabalhar ouvindo um som, bons amigos e principalmente
 [![Whatsapp](https://img.shields.io/badge/-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=54996262629)
 
 
-`
-
+`,
     };
   },
   computed: {

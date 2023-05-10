@@ -7,7 +7,7 @@
     </v-toolbar>
     <v-divider class="divider"></v-divider>
     <v-tabs vertical v-model="activeTab" background-color="#1f2428" v-for="(tab, idx) in tabs" :key="idx">
-      <v-tab class="justify-start pl-15 tabs">
+      <v-tab  class="justify-start pl-15 tabs">
         <v-icon left size="14" :color="tab.colorIcon"> {{tab.icon}} </v-icon>
         <span class="tab-span">{{tab.title}}</span>
       </v-tab>

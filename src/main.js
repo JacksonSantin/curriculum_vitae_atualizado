@@ -4,8 +4,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueSweetalert2 from 'vue-sweetalert2';
 import vuetify from './plugins/vuetify'
-import Prism from 'prismjs';
 import router from './router'
+import Prism from 'prismjs';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import 'prismjs/themes/prism-okaidia.css';
 import 'prismjs/plugins/command-line/prism-command-line.css';

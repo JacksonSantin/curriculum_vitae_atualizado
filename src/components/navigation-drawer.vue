@@ -30,20 +30,22 @@
             >
           </template>
 
-          <v-list>
-            <v-list-item v-for="(item, index) in socialNetworks" :key="index">
-              <v-list-item-action>
-                <v-btn
-                  fab
-                  icon
-                  x-small
-                  :elevation="0"
-                  class="white--text font-weight-bold"
-                  @click="window.open(item.link)"
-                >
-                  <v-icon small> {{ item.icon }} </v-icon>
-                </v-btn>
-              </v-list-item-action>
+          <v-list style="background-color: #1b1f23 !important" nav>
+            <v-list-item
+              class="pa-0"
+              v-for="(item, index) in socialNetworks"
+              :key="index"
+            >
+              <v-btn
+                fab
+                icon
+                small
+                :elevation="0"
+                class="white--text font-weight-bold"
+                @click="openLink(item.link)"
+              >
+                <v-icon> {{ item.icon }} </v-icon>
+              </v-btn>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -82,6 +84,11 @@ export default {
       },
     ],
   }),
+  methods: {
+    openLink(link) {
+      window.open(link);
+    },
+  },
 };
 </script>
 
