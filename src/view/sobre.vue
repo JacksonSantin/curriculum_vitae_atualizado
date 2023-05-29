@@ -13,17 +13,17 @@ export default {
       markdown: `
 # 📝 Sobre Mim
 
-Dedicação. Essa palavra me difine bem. Procuro sempre fazer tudo do jeito mais correto possível, sempre pensando no próximo. 
-Pratico programação sempre que tenho um tempo sobrando, procuro estar sempre por dentro das notícias que mais me interessam, tecnologia, é claro. 
+Dedicação. Essa palavra me difine bem. Procuro sempre fazer tudo do jeito mais correto possível, sempre pensando no próximo.
+Pratico programação sempre que tenho um tempo sobrando, procuro estar sempre por dentro das notícias que mais me interessam, tecnologia, é claro.
 Gosto de uma boa música, trabalhar ouvindo um som, bons amigos e principalmente, uma boa equipe com quem possa dividir e aperfeiçoar meus conhecimentos.
 
 ## 🎮 Hobbies
 
 - Jogar
 - Passear/Viajar
-- Assistir filmes e séries 
+- Assistir filmes e séries
 - Programar
-- Brincar com meu filho  
+- Brincar com meu filho
 <br />
 ## 🔖 Minhas Stacks
 
@@ -34,7 +34,7 @@ Gosto de uma boa música, trabalhar ouvindo um som, bons amigos e principalmente
 - Javascript
 - Java
 - Typescript
-- VueJs  
+- VueJs
 <br />
 # 👨 Dados Gerais
 **Nome:** Jackson Dhanyel Santin\n
