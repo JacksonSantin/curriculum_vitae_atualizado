@@ -14,14 +14,6 @@
         </v-tab>
       </v-tabs>
     </v-app-bar>
-
-    <main class="content">
-      <v-tabs-items v-model="tabTop">
-        <v-tab-item v-for="(tab, idx) in tabs" :key="idx">
-          <component :is="tab.component" />
-        </v-tab-item>
-      </v-tabs-items>
-    </main>
   </div>
 </template>
 
