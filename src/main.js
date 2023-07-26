@@ -5,6 +5,7 @@ import App from './App.vue'
 import VueSweetalert2 from 'vue-sweetalert2';
 import vuetify from './plugins/vuetify'
 import Prism from 'prismjs';
+import router from '@/config/router'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import 'prismjs/themes/prism-okaidia.css';
 import 'prismjs/plugins/command-line/prism-command-line.css';
@@ -22,6 +23,7 @@ Vue.use(VueSweetalert2, options);
 
 new Vue({
   vuetify,
+  router,
   Prism,
   render: h => h(App)
 }).$mount('#app')

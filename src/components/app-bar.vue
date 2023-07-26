@@ -1,17 +1,24 @@
 <template>
   <div>
     <v-app-bar color="#1f2428" app clipped-right flat height="30">
-      <v-tabs v-model="tabTop" v-for="(tab, idx) in tabs" :key="idx">
-        <v-tab class="d-flex align-center justify-content-between pa-2">
-          <v-icon left size="14" :color="tab.colorIcon">
-            {{ tab.icon }}
-          </v-icon>
-          <span class="tab-span">{{ tab.title }}.</span>
-          <span class="extension">md</span>
-          <v-icon right size="14" color="grey" @click="closeTab(idx)">
-            mdi-close
-          </v-icon>
-        </v-tab>
+      <v-tabs v-model="tabTop">
+        <router-link
+          v-for="(tab, idx) in tabs"
+          :key="idx"
+          :to="tab.path"
+          class="d-flex align-center justify-content-between pa-2 text-decoration-none"
+        >
+          <v-tab>
+            <v-icon left size="14" :color="tab.colorIcon">
+              {{ tab.icon }}
+            </v-icon>
+            <span class="tab-span">{{ tab.title }}.</span>
+            <span class="extension">md</span>
+            <v-icon right size="14" color="grey" @click="closeTab(idx)">
+              mdi-close
+            </v-icon>
+          </v-tab>
+        </router-link>
       </v-tabs>
     </v-app-bar>
   </div>
@@ -41,18 +48,44 @@ export default {
         colorIcon: "orange",
         icon: "mdi-account-details-outline",
         title: "sobre-mim",
-        component: Sobre
+        component: Sobre,
+        path: "/sobre"
       },
-      { colorIcon: "red", icon: "mdi-star-outline", title: "skills", component: Skills },
-      { colorIcon: "green", icon: "mdi-school-outline", title: "formacao", component: Formacao },
+      {
+        colorIcon: "red",
+        icon: "mdi-star-outline",
+        title: "skills",
+        component: Skills,
+        path: "/skills"
+      },
+      {
+        colorIcon: "green",
+        icon: "mdi-school-outline",
+        title: "formacao",
+        component: Formacao,
+        path: "/formacao"
+      },
       {
         colorIcon: "blue",
         icon: "mdi-briefcase-outline",
         title: "experiencia",
-        component: Experiencia
+        component: Experiencia,
+        path: "/experiencia"
       },
-      { colorIcon: "purple", icon: "mdi-code-tags", title: "projetos", component: Projetos },
-      { colorIcon: "cyan", icon: "mdi-email-outline", title: "contato", component: Contato },
+      {
+        colorIcon: "purple",
+        icon: "mdi-code-tags",
+        title: "projetos",
+        component: Projetos,
+        path: "/projetos"
+      },
+      {
+        colorIcon: "cyan",
+        icon: "mdi-email-outline",
+        title: "contato",
+        component: Contato,
+        path: "/contato"
+      },
     ],
   }),
   methods: {

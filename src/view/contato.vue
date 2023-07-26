@@ -86,7 +86,9 @@ export default {
 # 📍 Onde me encontro?
 
 **Endereço:** Rua Duque de Caxias, 370, Centro\n
-**[Ver rota no Google Maps](https://www.google.com/maps/dir/?api=1&destination=-28.450819517910066,-52.201736659492)**
+**E-mail:** jackdhanyelsn@gmail.com\n
+**Whatsapp:** (54) 9 9626-2629\n
+**[Ver rota no Google Maps](https://www.google.com/maps/dir/?api=1&destination=-28.450819517910066,-52.201736659492)**\n
 
 # 📧 Entre em contato
 
