@@ -48,6 +48,7 @@ Gosto de uma boa música, trabalhar ouvindo um som, bons amigos e principalmente
 [![Github](https://img.shields.io/badge/-Github-%23333F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JacksonSantin)
 [![Gmail](https://img.shields.io/badge/-Gmail-c71610?style=for-the-badge&logo=gmail&logoColor=white&link=mailto:jackdhanyelsn@gmail.com)](mailto:jackdhanyelsn@gmail.com)
 [![Whatsapp](https://img.shields.io/badge/-Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=54996262629)
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/jackdhanyels)
 
 
 `,
