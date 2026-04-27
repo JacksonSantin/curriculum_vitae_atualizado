@@ -1,0 +1,104 @@
+<template>
+  <v-navigation-drawer
+    absolute
+    color="#24292e"
+    class="justify-space-between"
+    mini-variant
+    permanent
+  >
+    <div class="icones my-2">
+      <div class="icones-top">
+        <v-icon
+          v-for="(item, idx) in iconesTop"
+          :key="idx"
+          class="d-block text-center mx-auto mb-4"
+          color="grey"
+          size="24"
+          >{{ item.icon }}</v-icon
+        >
+      </div>
+      <div class="icones-bottom">
+        <v-menu top open-on-hover :offset-x="true">
+          <template v-slot:activator="{ on, attrs }">
+            <v-icon
+              v-bind="attrs"
+              v-on="on"
+              class="d-block text-center mx-auto mb-4"
+              color="grey"
+              size="24"
+              >mdi-account-circle-outline</v-icon
+            >
+          </template>
+
+          <v-list style="background-color: #1b1f23 !important" nav>
+            <v-list-item
+              class="pa-0"
+              v-for="(item, index) in socialNetworks"
+              :key="index"
+            >
+              <v-btn
+                fab
+                icon
+                small
+                :elevation="0"
+                class="white--text font-weight-bold"
+                @click="openLink(item.link)"
+              >
+                <v-icon> {{ item.icon }} </v-icon>
+              </v-btn>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+        <v-icon class="d-block text-center mx-auto mb-4" color="grey" size="24"
+          >mdi-cog-outline</v-icon
+        >
+      </div>
+    </div>
+  </v-navigation-drawer>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    iconesTop: [
+      { icon: "mdi-file-multiple-outline" },
+      { icon: "mdi-magnify" },
+      { icon: "mdi-source-branch" },
+      { icon: "mdi-play-outline" },
+      { icon: "mdi-grid-large" },
+      { icon: "mdi-dots-horizontal" },
+    ],
+    socialNetworks: [
+      {
+        icon: "mdi-linkedin",
+        link: "[removido]",
+      },
+      { icon: "mdi-github", link: "https://github.com/JacksonSantin" },
+      {
+        icon: "mdi-instagram",
+        link: "[removido]",
+      },
+      {
+        icon: "mdi-facebook",
+        link: "[removido]",
+      },
+    ],
+  }),
+  methods: {
+    openLink(link) {
+      window.open(link);
+    },
+  },
+};
+</script>
+
+<style scoped>
+:deep(.v-navigation-drawer__border) {
+  background: #1b1f23 !important;
+}
+.icones-bottom {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 15px;
+}
+</style>
